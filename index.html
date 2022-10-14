@@ -30,50 +30,69 @@
                 </div>
                 <div class="scroll">
                     <div class="options">
-                        <div class="container">
-                            <img src="/assets/frango_yin_yang 1.png">
-                            <h1>Frango Yin Yang</h1>
-                            <h2>Um pouco de batata, um pouco de salada</h2>
-                            <h3>R$ 14,90</h3>
+                        <div onclick="chooseFrango()" id="frango" class="container"> 
+                            <div id="yesfrango" class="icon checked">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                                <img src="/assets/frango_yin_yang 1.png">
+                                <h1>Frango Yin Yang</h1>
+                                <h2>Um pouco de batata, um pouco de salada</h2>
+                                <h3>R$ 24,90</h3>                           
                         </div>
-                        <div class="container">
-                            <img src="/assets/frango_yin_yang 1.png">
-                            <h1>Frango Yin Yang</h1>
-                            <h2>Um pouco de batata, um pouco de salada</h2>
-                            <h3>R$ 14,90</h3>
+                        <div onclick="chooseStrogonofe()" id="strogonofe" class="container">
+                            <div id="yesstrogonofe" class="icon checked">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>                            
+                                <img src="/assets/Strogonoff.png">
+                                <h1>Strogonofe de Frango</h1>
+                                <h2>Batata-palha incluso</h2>
+                                <h3>R$ 19,90</h3>
                         </div>
-                        <div class="container">
-                            <img src="/assets/frango_yin_yang 1.png">
-                            <h1>Frango Yin Yang</h1>
-                            <h2>Um pouco de batata, um pouco de salada</h2>
-                            <h3>R$ 14,90</h3>
+                        <div onclick="choosePratoFeito()" id="pratofeito" class="container">
+                            <div id="yespratofeito" class="icon checked">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                                <img src="/assets/prato-feito.jpg">
+                                <h1>Simplesmente P.F</h1>
+                                <h2>O famigerado prato feito caprichado</h2>
+                                <h3>R$ 16,90</h3>    
                         </div>
                     </div>
                 </div>  <!--end of 'scroll'-->
             </div>  <!--end of first 'category'-->
+
             <div class="category">
                 <div class="title">
                     <p>Agora, sua bebida</p>
                 </div>
                 <div class="scroll">
                     <div class="options">
-                        <div class="container">
-                            <img src="/assets/coquinha_gelada 1.png">
-                            <h1>Coquinha gelada</h1>
-                            <h2>Lata 350ml</h2>
-                            <h3>R$ 4,90</h3>
+                        <div onclick="chooseCoquinha()" id="coquinha" class="container">
+                            <div id="yescoquinha" class="icon checked">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                                <img src="/assets/coquinha_gelada 1.png">
+                                <h1>Coquinha gelada</h1>
+                                <h2>Lata 350ml</h2>
+                                <h3>R$ 5,90</h3>
                         </div>
-                        <div class="container">
-                            <img src="/assets/coquinha_gelada 1.png">
-                            <h1>Coquinha gelada</h1>
-                            <h2>Lata 350ml</h2>
-                            <h3>R$ 4,90</h3>
+                        <div onclick="chooseMatte()" id="matte" class="container">
+                            <div id="yesmatte" class="icon checked">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                                <img src="/assets/copo-matte.jpg">
+                                <h1>Copo Matte</h1>
+                                <h2>Natural 300ml</h2>
+                                <h3>R$ 3,90</h3>
                         </div>
-                        <div class="container">
-                            <img src="/assets/coquinha_gelada 1.png">
-                            <h1>Coquinha gelada</h1>
-                            <h2>Lata 350ml</h2>
-                            <h3>R$ 4,90</h3>
+                        <div onclick="chooseAgua()" id="agua" class="container">
+                            <div id="yesagua" class="icon checked">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                                <img src="/assets/agua-sgas.png">
+                                <h1>Água s/ gás</h1>
+                                <h2>500ml</h2>
+                                <h3>R$ 2,90</h3>
                         </div>
                     </div>
                 </div>  <!--end of 'scroll'-->
@@ -85,40 +104,47 @@
                 </div>
                 <div class="scroll">
                     <div class="options">
-                        <div class="container">
-                            <img src="/assets/pudim 1.png">
-                            <h1>Pudim</h1>
-                            <h2>Apenas pudim</h2>
-                            <h3>R$ 7,90</h3>
+                        <div onclick="chooseTorta()" id="torta" class="container">
+                            <div id="yestorta" class="icon checked">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                                <img src="/assets/torta-limao.jpg">
+                                <h1>Fatia de Torta</h1>
+                                <h2>Sabor limão</h2>
+                                <h3>R$ 9,90</h3>
                         </div>
-                        <div class="container">
-                            <img src="/assets/pudim 1.png">
-                            <h1>Pudim</h1>
-                            <h2>Apenas pudim</h2>
-                            <h3>R$ 7,90</h3>
+                        <div onclick="choosePudim()" id="pudim" class="container">
+                            <div id="yespudim" class="icon checked">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                                <img src="/assets/pudim 1.png">
+                                <h1>Pudim</h1>
+                                <h2>Apenas pudim</h2>
+                                <h3>R$ 7,90</h3>
                         </div>
-                        <div class="container">
-                            <img src="/assets/pudim 1.png">
-                            <h1>Pudim</h1>
-                            <h2>Apenas pudim</h2>
-                            <h3>R$ 7,90</h3>
+                        <div onclick="chooseBrigadeiro()" id="brigadeiro" class="container">
+                            <div id="yesbrigadeiro" class="icon checked">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                                <img src="/assets/Brigadeiro.png">
+                                <h1>Brigadeiro</h1>
+                                <h2>No grau</h2>
+                                <h3>R$ 4,90</h3>
                         </div>
                     </div>
                 </div>  <!--end of 'scroll'-->
             </div>  <!--end of third 'category'-->
 
-        </div> <!--end of 'menu'-->
-        
+        </div> <!--end of 'menu'-->        
         <div class="header-bottom">
             <div class="button">
                 <div class="button-text">
                     Selecione os 3 itens<br>para fechar o pedido
                 </div>
             </div>
-
         </div>
-
-        <script src="/script.js"></script>
+        <script src="/script.js"> </script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     </body>
 
 </html>
