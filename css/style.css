@@ -38,7 +38,10 @@ body {
 }
 .category {
     height: 100%;
-    padding: 26px 0px 0px 20px;
+    padding-top: 26px;
+}
+.title {
+    padding-left: 20px;
 }
 p {
     font-family: 'Righteous';
@@ -51,27 +54,23 @@ p {
 }
 .scroll{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    overflow: hidden;
 }
 .options {
-    width: 500px;
     display: flex;
+    justify-content: space-between;
     overflow-x: scroll;
     margin-top: 12px;
 }
 .container {
     background-color: #FFFFFF;
-    width: 172px;
     height: 216px;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    margin-left: 25px;
 }
 .container img {
-    display: flex;
     margin: auto;
-    margin-top: 18px;
+    padding: 15px 12px 0px 12px;
 }
 h1 {
     color: #333333;
