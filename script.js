@@ -13,8 +13,8 @@ function chooseFood(food) {
     }    
         food.classList.add("selected-food");
 
-        chosen_food = food.innerHTML;
-        activatePayment();
+    chosen_food = food.innerHTML;
+    activatePayment();
 }
 
 function chooseDrink(drink) {
@@ -25,8 +25,8 @@ function chooseDrink(drink) {
     }    
         drink.classList.add("selected-drink");
 
-        chosen_drink = drink.innerHTML;
-        activatePayment();
+    chosen_drink = drink.innerHTML;
+    activatePayment();
 }
 
 function chooseDesert(desert) {
@@ -37,8 +37,8 @@ function chooseDesert(desert) {
     }    
         desert.classList.add("selected-desert");
 
-        chosen_desert = desert.innerHTML;
-        activatePayment();
+    chosen_desert = desert.innerHTML;
+    activatePayment();
 }
 
 function activatePayment() {
@@ -59,9 +59,9 @@ function makeOrder() {
     const food_name = (document.querySelector(".selected-food>h1")).innerHTML;
     const drink_name = (document.querySelector(".selected-drink>h1")).innerHTML;
     const desert_name = (document.querySelector(".selected-desert>h1")).innerHTML;
-    
     let total = 0;
-    let cost1 = (document.querySelector(".selected-food>h3")).innerHTML.replace("R$ ", "");
+    
+    cost1 = (document.querySelector(".selected-food>h3")).innerHTML.replace("R$ ", "");
     cost1 = cost1.replace(",", ".");
     cost1 = Number(cost1);
     total += cost1;
