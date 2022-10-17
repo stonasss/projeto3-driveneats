@@ -65,14 +65,12 @@ p {
     position: relative;
     background-color: #FFFFFF;
     height: 216px;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25) ;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     margin-left: 25px;
 }
-.icon {
+ion-icon {
     display: none;
-}
-.checked {
     position: absolute;
     width: 19px;
     height: 19px;
@@ -80,12 +78,19 @@ p {
     bottom: 10px;
     right: 10px;
 }
-.selected {
-    background-color: #FFFFFF;
-    height: 216px;
+.selected-food {
     box-shadow: inset 0px 0px 0px 5px #32B72F;
-    border-radius: 9px;
-    margin-left: 25px;
+}
+.selected-drink {
+    box-shadow: inset 0px 0px 0px 5px #32B72F;
+}
+.selected-desert{
+    box-shadow: inset 0px 0px 0px 5px #32B72F;
+}
+.selected-desert>ion-icon, 
+.selected-drink>ion-icon,
+.selected-food>ion-icon{
+    display: block;
 }
 .container img {
     width: 144px;
@@ -125,22 +130,26 @@ h3 {
     background-color: #FFFFFF;
 }
 .button {
-    position: absolute;
-    left: 25px;
-    top: 16px;
+    margin: auto;
+    margin-top: 12px;
+    background-color: #CBCBCB;
     width: 364px;
     height: 61px;
-    background-color: #CBCBCB;
+    color: #FFFFFF;
     border-radius: 50px;
-}
-.button-text {
-    position: absolute;
-    left: 80px;
-    top: 7px;
     font-weight: 400;
     font-size: 20px;
-    line-height: 23.44px;
+    line-height: 25px;
     letter-spacing: 0.018em;
     text-align: center;
-    color: #FFFFFF;
+    padding-top: 8px;
+}
+.button-off {
+    pointer-events: none;
+    cursor: default;
+}
+.button-selected {
+    background-color: #32B72F;
+    line-height: 50px;
+    pointer-events: initial;
 }
